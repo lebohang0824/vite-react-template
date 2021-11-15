@@ -6,6 +6,4 @@ const User: IUser = {
     accessToken: 'O$0-Yc@KA#BN-1DX23-1KK7'
 };
 
-export default {
-    User,
-};
+export default User;
