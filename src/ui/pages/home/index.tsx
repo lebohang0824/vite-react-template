@@ -1,9 +1,9 @@
 import { useStoreState } from 'easy-peasy';
 import * as React from 'react';
 import { Link } from 'react-router-dom';
+import { colors, Heading } from '../../theme';
 
 /* Components */
-import { Title } from './styles';
 
 /* Interfaces */
 import IUser from '../../../state/models/user-model/IUser';
@@ -15,12 +15,16 @@ export const Home: React.FC = () => {
     
     return (
         <div>
-            <Title>Home</Title>
+            <Heading 
+                color={colors.lightGrey} 
+                content="Home page"
+                size="big" 
+            />
+
             <ul>
-                <li>{ user.firstname }</li>
-                <li>{ user.lastname }</li>
-                <li>{ user.accessToken }</li>
+                <li style={{ color: colors.grey }}>{ user.firstname }</li>
             </ul>
+            
             <Link to="/about">Go to about</Link>
         </div>
     );
