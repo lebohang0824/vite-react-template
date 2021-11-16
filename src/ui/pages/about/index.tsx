@@ -1,9 +1,10 @@
 import * as React from 'react'
 import { Link } from 'react-router-dom';
+import Layout from '../../templates/layout';
 import { colors, Heading, Text } from '../../theme';
 
 export const About: React.FC = () => (
-    <div>
+    <Layout>
         <Heading 
             color={colors.lightGrey} 
             content="About page" 
@@ -13,5 +14,5 @@ export const About: React.FC = () => (
         <Text content="This is some content " />
         
         <Link to="/">Go home</Link>
-    </div>
+    </Layout>
 );

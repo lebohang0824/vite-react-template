@@ -7,6 +7,7 @@ import { colors, Heading } from '../../theme';
 
 /* Interfaces */
 import IUser from '../../../state/models/user-model/IUser';
+import Layout from '../../templates/layout';
 
 
 export const Home: React.FC = () => {
@@ -14,7 +15,7 @@ export const Home: React.FC = () => {
     const user: IUser = useStoreState((store: any) => store.User);
     
     return (
-        <div>
+        <Layout>
             <Heading 
                 color={colors.lightGrey} 
                 content="Home page"
@@ -26,6 +27,6 @@ export const Home: React.FC = () => {
             </ul>
 
             <Link to="/about">Go to about</Link>
-        </div>
+        </Layout>
     );
 }
