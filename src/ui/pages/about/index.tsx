@@ -7,7 +7,7 @@ export const About: React.FC = () => (
         <Heading 
             color={colors.lightGrey} 
             content="About page" 
-            size="big" 
+            size="normal" 
         />
 
         <Text content="This is some content " />

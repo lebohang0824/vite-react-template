@@ -18,13 +18,13 @@ export const Home: React.FC = () => {
             <Heading 
                 color={colors.lightGrey} 
                 content="Home page"
-                size="big" 
+                size="normal" 
             />
 
             <ul>
                 <li style={{ color: colors.grey }}>{ user.firstname }</li>
             </ul>
-            
+
             <Link to="/about">Go to about</Link>
         </div>
     );
